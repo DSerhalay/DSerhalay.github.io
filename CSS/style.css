@@ -43,16 +43,17 @@ body {
   grid-template-rows:
     5vh
     15vh
-    25vh auto
-    10vh auto
-    15vh 40vh
+    30vh
+    15vh
+    40vh
+    25vh
     60vh;
 }
 
 .footer {
   display: flex;
   grid-column: 1/13;
-  grid-row: 9/10;
+  grid-row: 10/11;
   background-color: #1861b0;
 }
 
@@ -82,26 +83,18 @@ body {
     15vh
     25vh auto
     100vh auto
-
     60vh;
-
-
 }
-
-
-
 
 .end {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows:
-   
     5vh
     15vh auto
     20vh
     15vh auto
-    60vh 
-    ;
+    60vh;
 }
 
 .end-footer {
@@ -143,7 +136,7 @@ body {
 .bg-grijs {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5vh 10vh;
+  grid-template-rows: 15vh 15vh;
 
   grid-column: 1/13;
   grid-row: 6/9;
@@ -299,7 +292,7 @@ body {
 }
 
 .videotitel {
-  grid-column: 5/9;
+  grid-column: 5/7;
   grid-row: 4/5;
 }
 .sollivideo {
@@ -331,14 +324,6 @@ body {
 .titelnaam {
   grid-column: 5/9;
   grid-row: 2/3;
-
-  margin: 10vh 0 0 0;
-}
-.carousel {
-  grid-column: 1/13;
-  grid-row: 4/5;
-
-  background-color: greenyellow;
 }
 
 .aboutme {
@@ -396,10 +381,9 @@ body {
   grid-row: 11/12;
   display: flex;
 }
-.portfolio{
+.portfolio {
   grid-column: 2/12;
   grid-row: 3/4;
- 
 }
 
 h1 {
@@ -719,22 +703,35 @@ p {
     width: 75%;
   }
 }
-	
-	.caption {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		padding: 25px 15px 15px;
-		width: 100%;
-		font-family: 'Raleway', sans-serif;
-		font-size: 16px;
-		color: white;
-		opacity: 0;
-		background: linear-gradient(0deg, rgba(0, 0, 0, .5) 0%, rgba(255, 255 ,255 , 0) 100%);
-		transition: .3s;
-	}
 
-  
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px 15px 15px;
+  width: 100%;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: white;
+  opacity: 0;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transition: 0.3s;
+}
+.gallery {
+  grid-column: 2/10;
+  grid-row: 3/4;
+}
+.gallery-home {
+  padding: 20px;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .gallery-image {
   padding: 20px;
   position: absolute;
@@ -744,13 +741,26 @@ p {
 }
 
 .gallery-image img {
-  height: 250px;
-  width: 350px;
-  transform: scale(1.0);
+  height: 450px;
+  width: 550px;
+  transform: scale(1);
   transition: transform 0.4s ease;
 }
 
 .img-box {
+  box-sizing: content-box;
+  border-radius: 30px;
+  border: 3px solid #000;
+  margin: 10px;
+  height: 450px;
+  width: 550px;
+  overflow: hidden;
+  display: inline-block;
+  color: white;
+  position: relative;
+  background-color: white;
+}
+.img-homebox {
   box-sizing: content-box;
   border-radius: 30px;
   border: 3px solid #000;
@@ -763,7 +773,7 @@ p {
   position: relative;
   background-color: white;
 }
-.img-box:hover{
+.img-box:hover {
   border: 3px solid #11a5e5;
 
   -ms-transform: scale(1.2);
@@ -773,28 +783,37 @@ p {
   transform: scale(1.2);
 }
 
-
 .transparent-box {
-  height: 250px;
-  width: 350px;
-  background-color:rgba(0, 0, 0, 0);
+  height: 450px;
+  width: 550px;
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   top: 0;
   left: 0;
   transition: background-color 0.3s ease;
 }
 
-.img-box:hover img { 
+.transparent-homebox {
+  height: 250px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.img-box:hover img {
   transform: scale(1.1);
 }
 
 .img-box:hover .transparent-box {
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .img-box:hover .caption {
   transform: translateY(-20px);
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .img-box:hover {
@@ -810,19 +829,21 @@ p {
 }
 
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
+input[type="text"],
+select,
+textarea {
   width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
+  padding: 12px; /* Some padding */
   border: 1px solid #ccc; /* Gray border */
   border-radius: 30px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
   margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 /* Style the submit button with a specific background color etc */
-input[type=submit] {
+input[type="submit"] {
   background-color: #11a5e5;
   color: white;
   padding: 12px 20px;
@@ -832,19 +853,17 @@ input[type=submit] {
 }
 
 /* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background-color: #1861b0;
 }
 
 /* Add a background color and some padding around the form */
 .container-form {
-
   grid-column: 3/9;
-  grid-row: 4/5 ;
+  grid-row: 4/5;
 
   border-radius: 30px;
   padding: 20px;
-
 }
 
 .contact {
