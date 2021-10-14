@@ -14,6 +14,39 @@ body {
   padding: 0;
   min-height: 100vh;
   display: grid;
+  font-family: "Avenir Next", Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0vh;
+  font-size: 40;
+
+  white-space: nowrap;
+}
+h2 {
+  color: #11a5e5;
+
+  font-weight: inherit;
+  font-size: 40;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+h3 {
+  color: #11a5e5;
+  font-size: 22;
+}
+
+h4 {
+  color: #cccccc;
+  font-size: 22;
+  font-weight: lighter;
+}
+
+p {
+  font-size: 20;
 }
 
 .backup-home {
@@ -22,6 +55,7 @@ body {
     5vh
     15vh
     60vh
+    15vh
     30vh
     40vh;
 }
@@ -29,6 +63,7 @@ body {
   grid-column: 1/2;
   grid-row: 1/2;
 
+  cursor: pointer;
   position: relative;
   padding: 15 0 0 30px;
 }
@@ -36,14 +71,17 @@ body {
 .header {
   grid-column: 4/ 13;
   grid-row: 1/2;
+
   border-bottom-left-radius: 50vh;
+  border: 3px solid;
+  border-color: #fff;
+
   padding: 20px 0 50 30px;
   position: relative;
 
-  background-color: #1861b0;
   color: #fff;
+  backdrop-filter: blur(10px);
 
-  font-family: "Avenir Next";
   font-size: 20;
   font-weight: 500;
 }
@@ -68,7 +106,10 @@ body {
 }
 
 .navigation a:hover {
-  color: #11a5e5;
+  background-color: #fff;
+
+  padding: 25px;
+  color: #1861b0;
 }
 
 .nav-contact {
@@ -79,6 +120,8 @@ body {
   grid-row: 1/2;
 
   border-bottom-left-radius: 50vh;
+  border: 3px solid;
+  border-color: #11a5e5;
   background-color: #11a5e5;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
@@ -87,6 +130,9 @@ body {
 
 .nav-contact:hover {
   border-bottom-left-radius: 50vh;
+  border: 3px solid;
+  border-color: #fff;
+
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   background-color: #fff;
@@ -98,7 +144,9 @@ body {
   grid-column: 1/13;
   grid-row: 1/4;
   background-color: black;
-  background-image: url(/img/myself.jpg);
+
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/img/slider/quote1.jpg);
 
   background-position: center;
   background-repeat: no-repeat;
@@ -111,7 +159,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
+
+  color: #fff;
 }
 
 .hero-btn {
@@ -140,22 +189,35 @@ body {
 .hero-btn span :after {
   position: absolute;
   opacity: 0;
-  top: 0;
-  right: -20px;
+
   transition: 0.5s;
 }
 
 .hero-btn:hover {
-    background-color: #1861b0;
-    border: none;
-    color: #fff;
-    padding-right: 25px;
-  }
-  
-  .hero-btn:hover span {
-    padding-right: 25px;
-    opacity: 1;
-    right: 0;
-  }
+  background-color: #1861b0;
+  border: 3px solid;
+  color: #fff;
+}
 
-  
+.hero-btn:hover span {
+  padding-right: 25px;
+  opacity: 1;
+  right: 0;
+}
+
+h1 {
+  color: #fff;
+  margin: 0 auto;
+  margin-top: 0vh;
+  font-size: 40;
+
+  white-space: nowrap;
+}
+.hero-content {
+  font-size: 45;
+
+  -webkit-text-stroke: 1.5px #fff; /* stroke width and color */
+  color: rgb(0, 0, 0);
+  -webkit-font-smoothing: antialiased;
+}
+
