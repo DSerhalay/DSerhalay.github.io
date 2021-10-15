@@ -52,20 +52,26 @@ p {
 .backup-home {
   grid-template-columns: repeat(12.1fr);
   grid-template-rows:
-    5vh
-    15vh
-    60vh
-    15vh
-    30vh
-    40vh;
+5vh 5vh
+60vh
+60vh
+
+    ;
 }
 .headerlogo {
-  grid-column: 1/2;
-  grid-row: 1/2;
+grid-column: 1/2;
+grid-row: 1/3;
+
+width: 15vh ;
+height: auto ;
+padding:10 0 0 20px;
+
+
 
   cursor: pointer;
   position: relative;
-  padding: 15 0 0 30px;
+ 
+  
 }
 
 .header {
@@ -167,10 +173,13 @@ p {
   background-color: #fff;
   border-radius: 50vh;
   border: none;
+  
 
   color: #1861b0;
   cursor: pointer;
-  font-size: 30px;
+
+  font-size: 25px;
+  font-weight: bold;
   padding: 15px 32px;
 
   text-align: center;
@@ -194,7 +203,7 @@ p {
 }
 
 .hero-btn:hover {
-  background-color: #1861b0;
+  background-color: #11a5e5;
   border: 3px solid;
   color: #fff;
 }
@@ -221,3 +230,38 @@ h1 {
   -webkit-font-smoothing: antialiased;
 }
 
+.video{
+background-color: #cccccc;
+grid-column: 1/13;
+grid-row: 4/5;
+
+display: grid;
+grid-template-columns: repeat(12,1fr);
+grid-template-rows: 10vh 5vh 30vh 5vh 10vh;
+
+
+}
+
+.solli-video{
+  background-color: #000;
+  grid-column: 1/8;
+  grid-row: 1/6;
+}
+
+.svideo {
+  max-width: 85%;
+  height: auto;
+  padding: 20px;
+  border: 3px solid #11a5e5;
+ 
+}
+
+.video-content{
+  background-color: black;
+  grid-column: 8/13;
+  grid-row: 1/6;
+}
+
+.stage-titel{
+  padding: 20px;
+}
