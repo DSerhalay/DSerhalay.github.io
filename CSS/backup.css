@@ -52,30 +52,24 @@ p {
 .backup-home {
   grid-template-columns: repeat(12.1fr);
   grid-template-rows:
-5vh 5vh
-60vh
-60vh
-
-    ;
+    5vh 5vh
+    60vh
+    60vh;
 }
 .headerlogo {
-grid-column: 1/2;
-grid-row: 1/3;
+  grid-column: 1/2;
+  grid-row: 1/3;
 
-width: 15vh ;
-height: auto ;
-padding:10 0 0 20px;
-
-
+  width: 15vh;
+  height: auto;
+  padding: 10 0 0 20px;
 
   cursor: pointer;
   position: relative;
- 
-  
 }
 
 .header {
-  grid-column: 4/ 13;
+  grid-column: 3/ 13;
   grid-row: 1/2;
 
   border-bottom-left-radius: 50vh;
@@ -173,7 +167,6 @@ padding:10 0 0 20px;
   background-color: #fff;
   border-radius: 50vh;
   border: none;
-  
 
   color: #1861b0;
   cursor: pointer;
@@ -230,38 +223,34 @@ h1 {
   -webkit-font-smoothing: antialiased;
 }
 
-.video{
-background-color: #cccccc;
-grid-column: 1/13;
-grid-row: 4/5;
-
-display: grid;
-grid-template-columns: repeat(12,1fr);
-grid-template-rows: 10vh 5vh 30vh 5vh 10vh;
-
-
-}
-
-.solli-video{
+.solli-video {
   background-color: #000;
   grid-column: 1/8;
-  grid-row: 1/6;
+  grid-row: 4/5;
 }
 
 .svideo {
-  max-width: 85%;
+  width: 100vh;
   height: auto;
-  padding: 20px;
+  padding: 30 0 0 30px;
+  
   border: 3px solid #11a5e5;
- 
+  border-radius: 30px;
 }
 
-.video-content{
+.video-content {
   background-color: black;
   grid-column: 8/13;
-  grid-row: 1/6;
+  grid-row: 4/5;
 }
 
-.stage-titel{
+.stage-titel {
   padding: 20px;
+  text-align: center;
+}
+
+.stage-content {
+ color: #fff;
+ padding: 0 50px;
+
 }
