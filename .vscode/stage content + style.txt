@@ -1,0 +1,60 @@
+
+.stage{
+  grid-column: 1/13;
+  grid-row: 4/5;
+
+  background-color: #11a5e5;
+
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: 10vh 60 10vh;
+
+}
+.solli-video {
+  background-color: #000;
+  grid-column: 1/8;
+  grid-row: 2/3;
+ 
+}
+
+.svideo {
+  width: 1000px;
+  height: auto;
+  padding: 30 0 0 30px;
+  
+  border: 3px solid #11a5e5;
+  border-radius: 30px;
+}
+
+.video-content {
+  background-color: black;
+  grid-column: 8/13;
+  grid-row: 2/3;
+
+}
+
+.stage-titel {
+  padding: 20px;
+  text-align: center;
+}
+
+.stage-content {
+ color: #fff;
+ padding: 0 50px;
+
+}
+
+
+   <div class="video-content">
+      <h1 class="stage-titel">Opzoek naar een stageplek</h1>
+      <p class="stage-content">
+        Dus als u mijn sollicitatievideo heeft gezien, weet u nu dat ik een stageplek zoek. Het liefst een stage met
+        een interactieve opties zoals mijn keuzedeel.
+      </p>
+      <p class="stage-content">
+        Interactief Webdesign
+        <br />Het vak waar je alles leert over coderen met HTML/CSS en misschien wel Javascript. Of waar je kan leren hoe Wordpress in elkaar zit.
+      </p>
+     <p class="stage-content">Duur:
+       <br> Periode van: 1 januari 2021 t/m 31 juli 2021 </p>
+    </div>
