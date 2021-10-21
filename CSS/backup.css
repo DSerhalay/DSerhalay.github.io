@@ -23,7 +23,8 @@ h1 {
   margin-top: 0vh;
   font-size: 40;
 
-  white-space: nowrap;
+text-align: center;
+  
 }
 h2 {
   color: #11a5e5;
@@ -54,13 +55,15 @@ p {
   grid-template-rows:
     5vh 5vh
     80vh
-    90vh;
+    80vh
+    10vh;
+
 }
 .headerlogo {
   grid-column: 1/2;
   grid-row: 1/2;
 
-  width: 100%;
+  width: 20vh;
   height: auto;
   padding: 10 0 0 20px;
 
@@ -69,7 +72,7 @@ p {
 }
 
 .header {
-  grid-column: 10/ 13;
+  grid-column: 8/ 13;
   grid-row: 1/2;
 
  
@@ -192,14 +195,17 @@ p {
 
 .hero-btn:hover {
   background-color: #11a5e5;
+  backdrop-filter: blur(10px);
   border: 3px solid;
   color: #fff;
+
 }
 
 .hero-btn:hover span {
   padding-right: 25px;
   opacity: 1;
   right: 0;
+  
 }
 
 h1 {
@@ -219,14 +225,13 @@ h1 {
 }
 
 .stage{
-  grid-column: 1/13;
-  grid-row: 4/5;
-
-  background-color: #11a5e5;
-
-  display: grid;
-  grid-template-columns: repeat(12,1fr);
-  grid-template-rows: 10vh 60 10vh;
-
+  background-color: #cccccc;
+  grid-column: 1/13 ;
+  grid-row: 4/6;
 }
 
+.gallery{
+  background-color: #11a5e5;
+  grid-column: 1/13 ;
+  grid-row: ;
+}
