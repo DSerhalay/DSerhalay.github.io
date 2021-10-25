@@ -63,7 +63,7 @@ p {
   grid-column: 1/2;
   grid-row: 1/2;
 
-  width: 20vh;
+  width: 100%;
   height: auto;
   padding: 10 0 0 20px;
 
