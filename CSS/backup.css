@@ -51,7 +51,8 @@ p {
   grid-template-rows:
     auto
     60vh
-    auto;
+    auto
+    60vh;
 }
 .headerlogo {
   grid-column: 1/2;
@@ -216,6 +217,9 @@ h1 {
 
 .video-content {
   background-color: black;
+  border: 3px solid;
+  border-color: #cccccc;
+
   grid-column: 7/13;
   grid-row: 3/4;
 }
@@ -238,4 +242,13 @@ h1 {
   padding: 0 50px;
 }
 
+.scene {
+
+  grid-column: 2/12;
+  grid-row: 4/5;
+  background-color: aqua;
+
+  position: relative;
+  perspective: 1000px;
+}
 
