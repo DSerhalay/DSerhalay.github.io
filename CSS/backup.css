@@ -50,7 +50,7 @@ p {
     60vh
     auto
     60vh
-  100vh;
+    100vh;
 }
 .headerlogo {
   grid-column: 1/2;
@@ -208,12 +208,11 @@ p {
 .video-content {
   grid-column: 8/12;
   grid-row: 3/4;
-  
 }
 .svideo {
   grid-column: 2/7;
   grid-row: 3/4;
-padding: 80px 0;
+  padding: 80px 0;
   width: 100%;
   height: auto;
 }
@@ -221,7 +220,6 @@ padding: 80px 0;
   padding: 40px;
   text-align: center;
 }
-
 
 .scene {
   margin: 10px;
@@ -233,7 +231,6 @@ padding: 80px 0;
   padding: 15vh;
   text-align: center;
 }
-
 
 .slideshow {
   width: 100%;
@@ -297,9 +294,6 @@ padding: 80px 0;
   letter-spacing: 1px;
 }
 
-
-
-
 @keyframes cycleImages {
   25% {
     opacity: 1;
@@ -322,51 +316,40 @@ padding: 80px 0;
   text-align: center;
 }
 
-.link1{
+.link1 {
   padding: 30 10vh;
   background-color: #1861b0;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
-  
 }
-.link2{
-
+.link2 {
   padding: 30 5vh;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
   background-color: #1861b0;
- 
 }
 
-.link3{
+.link3 {
   padding: 30 10vh;
   background-color: #11a5e5;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
-
 }
-.quote{
+.quote {
   font-weight: 600;
-  }
-
-
+}
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
-
-.hero-image{
+  .hero-image {
     grid-row: 1/4;
-}
+  }
 
-.video{
+  .video {
+  }
 
-}
-
-
-    
   .slideshow-item-text {
     max-width: 70%;
     padding: 5px 1rem;
-
   }
 }

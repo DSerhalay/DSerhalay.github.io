@@ -17,7 +17,7 @@ body {
 
 .landings {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 1fr auto 1fr;
 
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -39,7 +39,7 @@ body {
 
 .home {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows:
     5vh
     15vh
@@ -50,33 +50,23 @@ body {
     60vh;
 }
 
-
-
 .about {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows:
-  auto 15vh
-  25vh auto
- 50vh 
- auto 
- 
- auto 
-  100vh;
- 
-
- 
-  
-  
+    auto 15vh
+    25vh auto
+    50vh
+    auto
+    auto
+    100vh;
 }
-
 
 .portfolio {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows:
-  auto 15vh
-
+    auto 15vh
     25vh auto
     100vh auto
     100vh;
@@ -84,7 +74,7 @@ body {
 
 .end {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows:
     5vh
     15vh auto
@@ -93,10 +83,9 @@ body {
     60vh;
 }
 
-
 .bg {
   display: grid;
-  grid-template-columns: (1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 10vh auto 10vh;
   grid-column: 1/13;
   grid-row: 2/3;
@@ -125,7 +114,7 @@ body {
 
 .bg-grijs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 15vh 15vh;
 
   grid-column: 1/13;
@@ -135,8 +124,8 @@ body {
 
 .about-grijs {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 5vh 20vh 50vh 5vh;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10vh auto 10vh;
 
   grid-column: 1/13;
   grid-row: 7/8;
@@ -342,10 +331,10 @@ body {
 }
 
 .opleiding {
-  grid-column: 6 / 11;
+  grid-column: 7 / 12;
   grid-row: 2/3;
 
-  margin: 70 0 0 100px;
+  margin: 30 0 0 100px;
 }
 
 .opleidingen {
@@ -353,19 +342,18 @@ body {
   width: 100%;
   height: auto;
 
-  grid-column: 2/6;
+  grid-column: 2/7;
   grid-row: 2/4;
-
-  margin: 5vh;
-  padding: 5vh;
+  margin: 10px;
+  padding: 50px 0;
 }
 
 .werkervaringtitel {
   background: #ffffff;
   grid-column: 3/ 8;
   grid-row: 8/9;
+  margin: 80px  auto;
 
-  margin-bottom: 10vh;
 }
 
 .vaardighedentitel {
@@ -380,10 +368,11 @@ body {
   display: flex;
 }
 .vaardigheden2 {
-  margin-bottom: 30px;
+  margin-bottom: 20vh ;
   grid-column: 3 / 11;
   grid-row: 11/12;
   display: flex;
+
 }
 .portfolio {
   grid-column: 2/12;
@@ -397,7 +386,7 @@ body {
 h1 {
   color: #1861b0;
   margin-top: 0vh;
- 
+
   font-weight: inherit;
   font-size: 80;
 
@@ -468,7 +457,6 @@ p {
   font-family: "Blacksword", "verdana";
   font-weight: inherit;
   font-size: 60;
-
 }
 .portfolio0 {
   font-family: "Avenir Next Regular", "verdana";
@@ -517,8 +505,6 @@ p {
   font-weight: BOLDER;
   padding: 10px;
   cursor: pointer;
-
-  
 }
 .cardtext {
   color: #1861b0;
@@ -770,7 +756,7 @@ p {
   transition: transform 0.4s ease;
 }
 
-.gallery-image-home img{
+.gallery-image-home img {
   height: 250px;
   width: 350px;
   transform: scale(1);
@@ -790,13 +776,13 @@ p {
   position: relative;
   background-color: white;
 }
-.img-box-home{
+.img-box-home {
   box-sizing: content-box;
   border-radius: 30px;
   border: 3px solid #000;
   margin: 10px;
   height: 250px;
-  width:350px;
+  width: 350px;
   overflow: hidden;
   display: inline-block;
   color: white;
@@ -824,7 +810,6 @@ p {
   transition: background-color 0.3s ease;
 }
 
-
 .transparent-box-home {
   height: 250px;
   width: 350px;
@@ -851,7 +836,6 @@ p {
 .img-box:hover {
   cursor: pointer;
 }
-
 
 .img-box-home:hover img {
   transform: scale(1.1);
@@ -923,34 +907,28 @@ input[type="submit"]:hover {
   text-align: center;
 }
 
-.link1{
+.link1 {
   padding: 30 10vh;
   background-color: #1861b0;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
-  
 }
-.link2{
-
+.link2 {
   padding: 30 5vh;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
   background-color: #1861b0;
- 
 }
 
-.link3{
+.link3 {
   padding: 30 10vh;
   background-color: #11a5e5;
   border-top-left-radius: 5vh;
   border-top-right-radius: 5vh;
-
 }
-.quote{
+.quote {
   font-weight: 600;
-  }
-
-
+}
 
 /* The hero image */
 .hero-image {
@@ -1028,4 +1006,3 @@ input[type="submit"]:hover {
   color: rgb(0, 0, 0);
   -webkit-font-smoothing: antialiased;
 }
-
