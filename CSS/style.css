@@ -50,22 +50,24 @@ body {
     60vh;
 }
 
-.footer {
-  display: flex;
-  grid-column: 1/13;
-  grid-row: 10/11;
-  background-color: #1861b0;
-}
+
 
 .about {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows:
-    5vh
-    15vh
-    25vh auto
-    20vh auto
-    100vh auto;
+  auto 15vh
+  25vh auto
+ 50vh 
+ auto 
+ 
+ auto 
+  100vh;
+ 
+
+ 
+  
+  ;
 }
 
 .about-footer {
@@ -83,7 +85,7 @@ body {
     15vh
     25vh auto
     100vh auto
-    60vh;
+    100vh;
 }
 
 .end {
@@ -393,7 +395,7 @@ body {
 h1 {
   color: #1861b0;
   margin-top: 0vh;
-  font-family: "Blacksword", "verdana";
+ 
   font-weight: inherit;
   font-size: 80;
 
@@ -417,9 +419,9 @@ h1 {
 
 h2 {
   color: #11a5e5;
-  font-family: "Blacksword", "verdana";
+  font-family: "Avenir Next", "verdana";
   font-weight: inherit;
-  font-size: 40;
+  font-size: 25;
   margin-bottom: 0;
   padding-bottom: 0;
 }
@@ -501,7 +503,19 @@ p {
 }
 
 .cardsub {
+  color: #fff;
   background-color: #1861b0;
+  font-weight: normal;
+}
+.cardsub2 {
+  color: #fff;
+  background-color: #11a5e5;
+  border-radius: 5vh;
+  font-weight: BOLDER;
+  padding: 10px;
+  cursor: pointer;
+
+  
 }
 .cardtext {
   color: #1861b0;
@@ -899,19 +913,37 @@ input[type="submit"]:hover {
   padding: 20px;
 }
 
-.contact {
-  margin-top: 50px;
-  margin-left: 40vh;
-
-  color: #fff;
+.about-footer {
+  display: flex;
+  grid-column: 1/13;
+  grid-row: 12/13;
+  text-align: center;
 }
 
-.categorie {
-  margin-top: 50px;
-  margin-left: 40vh;
+.link1{
+  padding: 30 10vh;
+  background-color: #1861b0;
+  border-top-left-radius: 5vh;
+  border-top-right-radius: 5vh;
+  
+}
+.link2{
+
+  padding: 30 5vh;
+  border-top-left-radius: 5vh;
+  border-top-right-radius: 5vh;
+  background-color: #1861b0;
+ 
 }
 
-.links {
-  margin-top: 50px;
-  margin-left: 40vh;
+.link3{
+  padding: 30 10vh;
+  background-color: #11a5e5;
+  border-top-left-radius: 5vh;
+  border-top-right-radius: 5vh;
+
 }
+.quote{
+  font-weight: 600;
+  }
+
