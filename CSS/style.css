@@ -86,8 +86,6 @@ body {
 
 .bg {
   display: grid;
-  grid-template-rows:1fr auto 1fr;
-
   grid-column: 1/13;
   grid-row: 2/3;
 
