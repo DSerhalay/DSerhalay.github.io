@@ -89,6 +89,9 @@ body {
   grid-column: 1/13;
   grid-row: 2/3;
 
+
+
+
   background-color: white;
   border-bottom-left-radius: 30vh;
   border-top-right-radius: 30vh;
@@ -100,6 +103,7 @@ body {
   animation-name: intro;
   animation-duration: 10s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
 }
 
 @keyframes intro {

@@ -401,7 +401,7 @@ overflow: hidden;
   object-fit: cover;
   object-position: 50% 50%;
 cursor: pointer;
-transition:.5s ease-in-out;
+
 }
 
 .gallery-item:hover .image img{
@@ -428,8 +428,8 @@ transition:.5s ease-in-out;
 
 .gallery-item:hover .text{
   opacity: 1;
-  animation:move-down .3s linear;
-  padding: 1em;
+  animation: move-down.3s linear;
+  padding: 10px;
   width: 100%;
 }
 
