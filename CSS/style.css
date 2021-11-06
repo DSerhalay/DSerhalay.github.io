@@ -19,23 +19,14 @@ body {
   display: grid;
   grid-template-columns: repeat(12,1fr);
   grid-template-rows: 1fr auto 1fr;
+background-image: url(/img/slider/quote2.jpg) ;
 
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 15s ease infinite;
+  background-size: 100% 100%;
+  
+
 }
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
+
 
 .home {
   display: grid;
@@ -92,23 +83,27 @@ body {
 
 
 
-  background-color: white;
+  border: 3px solid #fff;
   border-bottom-left-radius: 30vh;
   border-top-right-radius: 30vh;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  
 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+backdrop-filter: blur(10px);
   margin: 0 20 0 20px;
 
   position: relative;
   animation-name: intro;
-  animation-duration: 10s;
+  animation-duration: 25s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+
+
 
 }
 
 @keyframes intro {
   from {
-    right: -500px;
+    right: -900px;
   }
   to {
     right: -50px;
@@ -123,6 +118,7 @@ body {
   grid-column: 1/13;
   grid-row: 6/9;
   background-color: lightgray;
+
 }
 
 .about-grijs {
@@ -138,6 +134,8 @@ body {
 .logo1 {
   grid-column: 4/9;
   grid-row: 2/4;
+
+
 
   margin: 0;
   padding: 50px 0 50px 0;
@@ -170,7 +168,11 @@ body {
 
 .button {
   background-color: #11a5e5;
+ 
   border-radius: 50vh;
+  
+  border: 3px solid #fff;
+
 
   color: #fff;
   cursor: pointer;
@@ -442,6 +444,17 @@ p {
   font-family: "Avenir Next Regular", "verdana";
   font-size: 30;
   font-weight: bold;
+  color: #fff;
+}
+
+.welkom1 {
+  font-family: "Avenir Next Regular", "verdana";
+  color: #fff;
+}
+
+.serhalaij{
+  font-family: "blacksword", "Avenir Next Regular", "verdana" ;
+  color:#11a5e5
 }
 
 .hometext0 {
@@ -931,6 +944,29 @@ input[type="submit"]:hover {
 .quote {
   font-weight: 600;
   color: #fff;
+}
+
+
+.fa:hover {
+  background-color: #11a5e5;
+  box-shadow: 120px 80px 40px 20px #0ff;
+color: #fff;
+}
+.fa-facebook {
+
+  color: #fff;
+}
+.fa-twitter {
+
+  color: white;
+}
+.fa-instagram {
+
+  color: white;
+}
+.fa-linkedin {
+
+  color: white;
 }
 
 /* The hero image */
