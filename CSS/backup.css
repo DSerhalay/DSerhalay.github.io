@@ -343,7 +343,7 @@ margin:  0 0 20vh 0;
   grid-template-columns: repeat(6,1fr);
   grid-auto-rows: 100px 300px;
   grid-auto-flow: dense;
-  grid-gap:10px;
+  grid-gap:20px;
   
 
 }
@@ -412,6 +412,7 @@ overflow: hidden;
   object-position: 50% 50%;
 cursor: pointer;
 
+
 }
 
 .gallery-item:hover .image img{
@@ -419,21 +420,23 @@ cursor: pointer;
 }
 
 .gallery-item .text{
-  opacity: 1;
-  position: absolute;
 
+  position: absolute;
+  overflow: hidden;
+  text-indent: -999999999;
   padding: 10px;
+
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
   color: #000;
   font-size: 25px;
   pointer-events: none;
+
   z-index:4;
   transition: .3s ease-in-out;
-  -webkit-backdrop-filter: blur(5px) saturate(1.8);
  
-  backdrop-filter: blur(5px) saturate(1.8);
 
 
 }
@@ -441,8 +444,11 @@ cursor: pointer;
 .gallery-item:hover .text{
   opacity: 1;
   animation: move-down.3s linear;
+  text-indent: 0;
   padding: 10px;
   width: 100%;
+  -webkit-backdrop-filter: blur(5px) saturate(1.8);
+  backdrop-filter: blur(5px) saturate(1.8);
 }
 
 .w-1{
