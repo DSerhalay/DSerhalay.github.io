@@ -226,7 +226,7 @@ backdrop-filter: blur(10px);
 }
 
 .header {
-  grid-column: 7/ 13;
+  grid-column: 6/ 13;
   grid-row: 1/2;
 
   align-self: center;
@@ -1049,6 +1049,40 @@ color: #fff;
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
+
+
+  .landings {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);}
+
+
+
+  .hero-image {
+    grid-row: 1/4;
+  }
+
+
+
+  .slideshow-item-text {
+    max-width: 70%;
+    padding: 5px 1rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+
+
+  .landings {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+  }
+
+  .bg{
+   grid-column: 2/3;
+ 
+  }
+
+
   .hero-image {
     grid-row: 1/4;
   }
