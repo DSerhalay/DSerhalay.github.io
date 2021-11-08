@@ -94,7 +94,7 @@ backdrop-filter: blur(10px);
 
   position: relative;
   animation-name: intro;
-  animation-duration: 25s;
+  animation-duration: 10s;
   animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
 
 
